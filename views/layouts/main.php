@@ -1,6 +1,7 @@
 <?php
 $title = $title ?? "Papa & Lalla Annonces";
 $currentPage = $currentPage ?? "";
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,7 @@ $currentPage = $currentPage ?? "";
     </header>
 
     <main class="container mx-auto mt-8">
-        <?= $content; ?>
+        <?php echo $content ?? ""?>
     </main>
 
     <footer class="bg-gray-800 text-white p-4 mt-8 text-center">
