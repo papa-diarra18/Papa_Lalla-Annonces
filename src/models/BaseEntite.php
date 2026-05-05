@@ -1,4 +1,5 @@
 <?php
+namespace Src\Models;
 abstract class BaseEntite{
     private ?int $id =  null;
     public function getId():?int{

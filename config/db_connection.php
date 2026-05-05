@@ -3,10 +3,8 @@ $host = "localhost";
 $dbname = "nos_annoces_db";
 $user = "root";
 $password = "";
-
 use PDO;
 use PDOException;
-
 try {
     $dsn = "mysql:host=$host,dbname=$dbname,charset=utf-8";
     $options = [
@@ -19,3 +17,4 @@ try {
 } catch (PDOException $e) {
     die("conexion echouee " . $e->getMessage());
 }
+

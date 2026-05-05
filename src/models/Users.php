@@ -1,7 +1,7 @@
 <?php
 
 namespace Src\Models;
-
+use Src\Models\BaseEntite;
 class Users extends BaseEntite
 {
     private string $nom;
@@ -17,4 +17,10 @@ class Users extends BaseEntite
         $this->password = $password;
         $this->tel = $tel;
     }
+    abstract public function toArray():array{
+        $data = ['
+        
+        ']
+    }
+    
 }
